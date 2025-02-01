@@ -11,9 +11,11 @@ function Home() {
         <>
           <h1>アプリケーション</h1>
           <div className="card">
-            <button onClick={signOut}>サインアウト</button>
-            <p></p>
             <button onClick={() => navigate('/Costcheck')}>コスト確認をする</button>
+            <p></p>
+            <button onClick={() => navigate('/Game')}>ゲームをする</button>
+            <p></p>
+            <button onClick={signOut}>サインアウト</button>
           </div>
         </>
       )}
