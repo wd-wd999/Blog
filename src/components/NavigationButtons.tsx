@@ -13,7 +13,7 @@ export const NavigationButtons = ({ showSignOut = false, onSignOut }: { showSign
         </Button>
       </View>
       <View className="nav-buttons-center">
-        <Button onClick={() => navigate('/')} className="nav-button">
+        <Button onClick={() => navigate('/Home')} className="nav-button">
           ホームに戻る
         </Button>
       </View>

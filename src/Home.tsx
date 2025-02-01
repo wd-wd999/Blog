@@ -1,8 +1,10 @@
-import './App.css'
-import { Link } from 'react-router-dom';
+import './App.css';
+import { useNavigate } from 'react-router-dom';
 import { Authenticator } from "@aws-amplify/ui-react";
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <Authenticator>
       {({ signOut }) => (
@@ -11,13 +13,12 @@ function Home() {
           <div className="card">
             <button onClick={signOut}>サインアウト</button>
             <p></p>
-            <Link to="/Costcheck">
-              <button>コスト確認をする</button>
-            </Link>
+            <button onClick={() => navigate('/Costcheck')}>コスト確認をする</button>
           </div>
         </>
       )}
     </Authenticator>
-  )
+  );
 }
-export default Home
+
+export default Home;
