@@ -1,13 +1,13 @@
-import '../App.css'
+import './App.css'
 import { Link } from 'react-router-dom';
 import { Authenticator } from "@aws-amplify/ui-react";
 
-function Costcheck() {
+function Home() {
   return (
     <Authenticator>
       {({ signOut }) => (
         <>
-          <h1>コストを確認する</h1>
+          <h1>アプリケーション</h1>
           <div className="card">
             <button onClick={signOut}>サインアウト</button>
             <p></p>
@@ -20,4 +20,4 @@ function Costcheck() {
     </Authenticator>
   )
 }
-export default Costcheck
+export default Home
