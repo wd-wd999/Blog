@@ -1,6 +1,6 @@
+import '../App.css'
 import { Authenticator, translations } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
-import '../App.css'
 import { I18n } from "aws-amplify/utils"
 import { Amplify } from "aws-amplify";
 import { ResourcesConfig } from "@aws-amplify/core";

@@ -37,8 +37,8 @@ const Game = () => {
 
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>モグラ叩きゲーム</h1>
-      <p>モグラをクリックしてスコアを増やしましょう！</p>
+      <h1>ゲーム</h1>
+      <p>⭐️をクリックしてスコアを増やしましょう！</p>
       <h2>残り時間: {timeLeft}秒</h2>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 100px)', gap: '10px', justifyContent: 'center' }}>
         {Array.from({ length: 9 }).map((_, index) => (
@@ -56,7 +56,7 @@ const Game = () => {
               fontSize: '24px',
             }}
           >
-            {index === molePosition && 'ʕ•ᴥ•ʔ'}
+            {index === molePosition && '⭐️'}
           </div>
         ))}
       </div>
