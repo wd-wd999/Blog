@@ -1,7 +1,7 @@
 import { Authenticator, translations } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
 import '../App.css'
-import Page1 from '../App.tsx'
+import Home from '../App.tsx'
 import { I18n } from "aws-amplify/utils"
 import { Amplify } from "aws-amplify";
 import { ResourcesConfig } from "@aws-amplify/core";
@@ -26,7 +26,7 @@ function Login() {
           <main>
             {user && (
               <Routes>
-                <Route path="/" element={<Page1 />} />
+                <Route path="/" element={<Home />} />
               </Routes>
             )}
           </main>
