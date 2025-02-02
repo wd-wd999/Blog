@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 import { useNavigate } from 'react-router-dom';
 import { Authenticator } from "@aws-amplify/ui-react";
 
@@ -14,6 +14,8 @@ function Home() {
             <button onClick={() => navigate('/Costcheck')}>コスト確認をする</button>
             <p></p>
             <button onClick={() => navigate('/Game')}>ゲームをする</button>
+            <p></p>
+            <button onClick={() => navigate('/Test')}>工事中👷</button>
             <p></p>
             <button onClick={signOut}>サインアウト</button>
           </div>

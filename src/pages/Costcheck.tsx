@@ -1,4 +1,4 @@
-import '../App.css'
+import '../styles/App.css';
 import { Authenticator } from '@aws-amplify/ui-react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
