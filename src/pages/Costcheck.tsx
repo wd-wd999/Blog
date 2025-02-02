@@ -23,7 +23,7 @@ const Costcheck = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch('https://ee60595noj.execute-api.ap-northeast-1.amazonaws.com/prod/');
+      const response = await fetch('https://gung5sl25j.execute-api.ap-northeast-1.amazonaws.com/prod/getCostIntegration');
       const data = await response.json();
       setCostData(data);
     } catch (err) {
