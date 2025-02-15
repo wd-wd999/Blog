@@ -13,9 +13,9 @@ function Home() {
           <div className="card">
             <button onClick={() => navigate('/Costcheck')}>コスト確認をする</button>
             <p></p>
-            <button onClick={() => navigate('/Game')}>ゲームをする</button>
+            <button onClick={() => navigate('/Game')}>🤖ゲームをする🎮</button>
             <p></p>
-            <button onClick={() => navigate('/Test')}>工事中👷</button>
+            <button onClick={() => navigate('/Test')}>⛺️キャンプ場に行く🔥</button>
             <p></p>
             <button onClick={signOut}>サインアウト</button>
           </div>
